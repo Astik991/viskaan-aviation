@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const stats = [
   {
@@ -36,6 +37,23 @@ export default function StatsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="flex justify-center mb-8"
+          >
+            <div className="w-24 h-24 md:w-32 md:h-32 relative">
+              <Image
+                src="/Visshanaviation logo.svg"
+                alt="Visskan Aviation Logo"
+                fill
+                className="object-contain filter brightness-0 invert"
+              />
+            </div>
+          </motion.div>
+          
           <h2 className="heading-secondary text-white mb-6">
             Trusted by Airlines <span className="text-aviation-blue-200">Worldwide</span>
           </h2>

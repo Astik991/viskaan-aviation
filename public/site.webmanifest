@@ -1,0 +1,16 @@
+{
+  "name": "Visskan Aviation",
+  "short_name": "Visskan Aviation",
+  "description": "Professional Ground Handling Services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "icons": [
+    {
+      "src": "/Visshanaviation logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+} 
