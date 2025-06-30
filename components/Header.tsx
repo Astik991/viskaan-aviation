@@ -39,7 +39,7 @@ export default function Header() {
     >
       <nav className="container-custom flex items-center justify-between py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-3">
+        <Link href="/" className="flex items-center">
           <Image
             src="/Visshanaviation logo.svg"
             alt="Visskan Aviation Logo"
@@ -47,9 +47,6 @@ export default function Header() {
             height={50}
             className="h-10 w-auto"
           />
-          <span className="text-xl font-poppins font-bold text-aviation-grey-900">
-            Visskan Aviation
-          </span>
         </Link>
 
         {/* Desktop Navigation */}
