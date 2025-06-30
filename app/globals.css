@@ -53,11 +53,11 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-aviation-blue-600 to-aviation-blue-800 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-aviation-blue-700 to-aviation-blue-900 bg-clip-text text-transparent;
   }
   
   .bg-gradient-aviation {
-    @apply bg-gradient-to-br from-aviation-blue-600 via-aviation-blue-700 to-aviation-blue-800;
+    @apply bg-gradient-to-br from-aviation-blue-700 via-aviation-blue-800 to-aviation-blue-900;
   }
   
   .animate-float {
