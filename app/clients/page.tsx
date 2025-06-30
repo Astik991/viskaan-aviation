@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Our Clients - Visskan Aviation',
@@ -10,14 +11,46 @@ export const metadata: Metadata = {
 }
 
 const clients = [
-  { name: 'Air India', description: 'National flag carrier of India' },
-  { name: 'IndiGo', description: 'Largest airline in India by passengers carried' },
-  { name: 'SpiceJet', description: 'Low-cost airline headquartered in Gurugram' },
-  { name: 'Vistara', description: 'Full-service carrier joint venture' },
-  { name: 'GoAir', description: 'Ultra low-cost airline' },
-  { name: 'AirAsia India', description: 'Low-cost airline subsidiary' },
-  { name: 'Alliance Air', description: 'Regional subsidiary of Air India' },
-  { name: 'Blue Dart Aviation', description: 'Cargo airline' }
+  { 
+    name: 'Air India', 
+    description: 'National flag carrier of India',
+    logo: 'https://logos-world.net/wp-content/uploads/2023/01/Air-India-Logo.png'
+  },
+  { 
+    name: 'IndiGo', 
+    description: 'Largest airline in India by passengers carried',
+    logo: 'https://logos-world.net/wp-content/uploads/2023/01/IndiGo-Logo.png'
+  },
+  { 
+    name: 'SpiceJet', 
+    description: 'Low-cost airline headquartered in Gurugram',
+    logo: 'https://logos-world.net/wp-content/uploads/2023/01/SpiceJet-Logo.png'
+  },
+  { 
+    name: 'Vistara', 
+    description: 'Full-service carrier joint venture',
+    logo: 'https://logos-world.net/wp-content/uploads/2023/01/Vistara-Logo.png'
+  },
+  { 
+    name: 'GoAir', 
+    description: 'Ultra low-cost airline',
+    logo: 'https://logos-world.net/wp-content/uploads/2023/01/Go-First-Logo.png'
+  },
+  { 
+    name: 'AirAsia India', 
+    description: 'Low-cost airline subsidiary',
+    logo: 'https://logos-world.net/wp-content/uploads/2023/01/AirAsia-Logo.png'
+  },
+  { 
+    name: 'Alliance Air', 
+    description: 'Regional subsidiary of Air India',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Alliance_Air_logo.svg/1200px-Alliance_Air_logo.svg.png'
+  },
+  { 
+    name: 'Blue Dart Aviation', 
+    description: 'Cargo airline',
+    logo: 'https://logos-world.net/wp-content/uploads/2020/11/Blue-Dart-Logo.png'
+  }
 ]
 
 const testimonials = [
@@ -58,11 +91,16 @@ export default function Clients() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {clients.map((client, index) => (
-              <div key={client.name} className="card p-6 text-center">
-                <div className="w-20 h-20 bg-aviation-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <span className="text-lg font-bold text-aviation-blue-600">
-                    {client.name.charAt(0)}
-                  </span>
+              <div key={client.name} className="card p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mx-auto mb-4 p-2 shadow-sm border border-aviation-grey-200">
+                  <Image
+                    src={client.logo}
+                    alt={`${client.name} logo`}
+                    width={80}
+                    height={80}
+                    className="object-contain"
+                    style={{ maxWidth: '100%', height: 'auto' }}
+                  />
                 </div>
                 <h3 className="text-lg font-poppins font-semibold text-aviation-grey-900 mb-2">
                   {client.name}
