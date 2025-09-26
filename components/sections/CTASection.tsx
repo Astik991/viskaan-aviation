@@ -25,8 +25,6 @@ export default function CTASection() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
@@ -39,7 +37,7 @@ export default function CTASection() {
               <ArrowRightIcon className="h-5 w-5" />
             </Link>
             <Link 
-              href="tel:+91-22-6685-1000" 
+              href="tel:+919482145072" 
               className="btn-secondary bg-transparent border-white text-white hover:bg-white hover:text-aviation-grey-900 inline-flex items-center space-x-2"
             >
               <PhoneIcon className="h-5 w-5" />
@@ -61,7 +59,7 @@ export default function CTASection() {
               </div>
               <h3 className="font-poppins font-semibold mb-2">Call Us</h3>
               <p className="text-aviation-grey-400 text-sm mb-2">Available 24/7</p>
-              <p className="text-aviation-blue-300">+91 22 6685 1000</p>
+              <p className="text-aviation-blue-300">+91 94821 45072</p>
             </div>
 
             <div className="bg-aviation-grey-800 rounded-lg p-6 text-center">
@@ -84,11 +82,11 @@ export default function CTASection() {
               </div>
               <h3 className="font-poppins font-semibold mb-2">Visit Us</h3>
               <p className="text-aviation-grey-400 text-sm mb-2">Headquarters</p>
-              <p className="text-aviation-blue-300">Mumbai Airport T2</p>
+              <p className="text-aviation-blue-300">Bangalore</p>
             </div>
           </motion.div>
         </div>
       </div>
     </section>
   )
-} 
+}

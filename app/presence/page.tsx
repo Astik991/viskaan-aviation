@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Airport Presence - Visskan Aviation',
-  description: 'Visskan Aviation operates across 25+ major airports in India including Mumbai, Delhi, Bangalore, Chennai, and more.',
+  description: 'Visskan Aviation operates across major airports in India including Bangalore, Chennai, Hyderabad and more.',
   openGraph: {
     title: 'Airport Presence - Visskan Aviation',
     description: 'Our strategic presence across major Indian airports ensures comprehensive coverage.',
@@ -10,29 +10,25 @@ export const metadata: Metadata = {
 }
 
 const airports = [
-  { name: 'Mumbai', code: 'BOM', city: 'Mumbai', state: 'Maharashtra' },
-  { name: 'Delhi', code: 'DEL', city: 'Delhi', state: 'Delhi' },
-  { name: 'Bangalore', code: 'BLR', city: 'Bangalore', state: 'Karnataka' },
+  { name: 'Bangalore', code: 'BLR', city: 'Bengaluru', state: 'Karnataka' },
   { name: 'Chennai', code: 'MAA', city: 'Chennai', state: 'Tamil Nadu' },
-  { name: 'Kolkata', code: 'CCU', city: 'Kolkata', state: 'West Bengal' },
   { name: 'Hyderabad', code: 'HYD', city: 'Hyderabad', state: 'Telangana' },
-  { name: 'Pune', code: 'PNQ', city: 'Pune', state: 'Maharashtra' },
-  { name: 'Ahmedabad', code: 'AMD', city: 'Ahmedabad', state: 'Gujarat' },
-  { name: 'Kochi', code: 'COK', city: 'Kochi', state: 'Kerala' },
-  { name: 'Goa', code: 'GOI', city: 'Goa', state: 'Goa' },
-  { name: 'Jaipur', code: 'JAI', city: 'Jaipur', state: 'Rajasthan' },
-  { name: 'Lucknow', code: 'LKO', city: 'Lucknow', state: 'Uttar Pradesh' },
-  { name: 'Indore', code: 'IDR', city: 'Indore', state: 'Madhya Pradesh' },
-  { name: 'Bhubaneswar', code: 'BBI', city: 'Bhubaneswar', state: 'Odisha' },
+  { name: 'Calicut', code: 'CCJ', city: 'Kozhikode', state: 'Kerala' },
+  { name: 'Cochin', code: 'COK', city: 'Kochi', state: 'Kerala' },
+  { name: 'Trichy', code: 'TRZ', city: 'Tiruchirappalli', state: 'Tamil Nadu' },
   { name: 'Coimbatore', code: 'CJB', city: 'Coimbatore', state: 'Tamil Nadu' },
-  { name: 'Nagpur', code: 'NAG', city: 'Nagpur', state: 'Maharashtra' }
+  { name: 'Mangalore', code: 'IXE', city: 'Mangaluru', state: 'Karnataka' },
+  { name: 'Trivandrum', code: 'TRV', city: 'Thiruvananthapuram', state: 'Kerala' },
+  { name: 'Pune', code: 'PNQ', city: 'Pune', state: 'Maharashtra' },
+  { name: 'Hubballi', code: 'HBX', city: 'Hubballi', state: 'Karnataka' },
+  { name: 'Madurai', code: 'IXM', city: 'Madurai', state: 'Tamil Nadu' },
 ]
 
 export default function Presence() {
   return (
     <div className="pt-20">
-      <section className="section-padding">
-        <div className="container-custom">
+        <section className="section-padding">
+          <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="heading-primary mb-6">
               Our <span className="text-gradient">Presence</span>
@@ -60,8 +56,8 @@ export default function Presence() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
       
       <section className="section-padding bg-aviation-grey-50">
         <div className="container-custom text-center">

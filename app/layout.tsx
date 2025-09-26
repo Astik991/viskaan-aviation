@@ -108,7 +108,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
         {/* Favicon */}
-        <link rel="icon" href="/Visshanaviation logo.svg" type="image/svg+xml" />
+        <link rel="icon" href="/visskan-stacked-logo.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />

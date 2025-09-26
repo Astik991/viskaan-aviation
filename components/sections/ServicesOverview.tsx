@@ -15,38 +15,67 @@ const services = [
   {
     icon: CogIcon,
     title: 'Ground Handling',
-    description: 'Complete aircraft ground handling services including ramp operations, baggage handling, and aircraft marshalling.',
-    features: ['Ramp Operations', 'Aircraft Marshalling', 'Baggage Handling', 'Cargo Loading']
+    // description: 'Complete aircraft ground handling services including ramp operations, baggage handling, and aircraft marshalling.',
+    features: ['GSE Operation and Maintenance', 'Baggage Handling Services', 'Cabin Cleaning and Preparation', 'Potable Water and Lavatory Services', 'Cargo Loading and Offloading', 'Passenger & Crew Movement', 'Aircraft Pushback Operations']
   },
   {
     icon: TruckIcon,
     title: 'Cargo Services',
-    description: 'Specialized cargo handling and logistics solutions for both domestic and international shipments.',
-    features: ['Cargo Handling', 'Freight Forwarding', 'Warehousing', 'Customs Clearance']
+    // description: 'Specialized cargo handling and logistics solutions for both domestic and international shipments.',
+    features: [
+      "Dock Operations for Inbound and Outbound Cargo",
+      "Security Screening of Cargo",
+      "Palletization/De-Palletization",
+      "Storage and Staging of Cargo",
+      "Weight and Balance Coordination",
+      "ULD Handling and Management",
+      "Special Cargo Handling ",
+      "Customs Coordination and Clearance Support",
+      "Damage Inspection and Reporting"
+      ]
   },
   {
     icon: UserGroupIcon,
     title: 'Passenger Services',
-    description: 'Comprehensive passenger assistance and customer service solutions at terminal facilities.',
-    features: ['Check-in Assistance', 'Boarding Support', 'Special Assistance', 'VIP Services']
+    // description: 'Comprehensive passenger assistance and customer service solutions at terminal facilities.',
+    features: [ "Check-in Services",
+      "Immigration and Customs Support",
+      "Boarding Assistance",
+      "Passenger Guidance and Information Services",
+      "Special Assistance for PRMs & UMs ",
+      "Flight Announcements",
+      "Baggage Claim Assistance",
+      "Transit and Transfer Support",
+      "Customer Service Desks",
+      "Meet and Greet Services",
+      "VIP and Protocol Services",
+      "Ground Transportation Assistance ",
+      "Load & Trim"
+    ]
   },
   {
     icon: WrenchScrewdriverIcon,
     title: 'Aircraft Maintenance',
-    description: 'Professional aircraft maintenance and technical support services ensuring safety and compliance.',
-    features: ['Line Maintenance', 'Technical Support', 'Safety Inspections', 'Compliance Checks']
+    description: 'Professional aircraft maintenance support services ensuring safety and compliance.”',
+    features: [
+      'Line Maintenance',
+      'Airframe and Structural Repairs',
+      'Component Repair and Replacement',
+      'Cabin Maintenance and Interior Repairs',
+      'Aircraft Cleaning and Detailing (Interior & Exterior)'
+    ]
   },
   {
     icon: BeakerIcon,
     title: 'Fuel Services',
-    description: 'Reliable aircraft refueling services with strict safety protocols and quality assurance.',
-    features: ['Aircraft Refueling', 'Fuel Quality Control', 'Safety Protocols', 'Into-plane Services']
+    description: 'Manpower support for Reliable aircraft refuelling services with strict safety protocols and quality assurance.',
+    features: ['Aircraft Refueling', 'Fuel Quality Control', 'Safety Protocols']
   },
   {
     icon: ClipboardDocumentCheckIcon,
     title: 'Operations Support',
-    description: 'Comprehensive operational support including flight planning, weather monitoring, and coordination.',
-    features: ['Flight Planning', 'Weather Monitoring', 'Operations Coordination', 'Documentation']
+    description: 'Comprehensive operational support and coordination.”',
+    features: ['Operations Coordination', 'Documentation']
   }
 ]
 

@@ -10,12 +10,12 @@ const stats = [
     description: 'Comprehensive ground handling services for domestic and international flights'
   },
   {
-    number: '25+',
+    number: '10+',
     label: 'Airport Locations',
     description: 'Strategic presence across major Indian airports nationwide'
   },
   {
-    number: '15+',
+    number: '25+',
     label: 'Years Experience',
     description: 'Proven track record in aviation ground handling excellence'
   },
@@ -46,7 +46,7 @@ export default function StatsSection() {
           >
             <div className="w-24 h-24 md:w-32 md:h-32 relative">
               <Image
-                src="/Visshanaviation logo.svg"
+                src="/visskan-stacked-logo.svg"
                 alt="Visskan Aviation Logo"
                 fill
                 className="object-contain filter brightness-0 invert"

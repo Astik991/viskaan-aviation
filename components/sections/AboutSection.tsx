@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { 
   ShieldCheckIcon, 
-  GlobeAltIcon, 
+  GlobeAltIcon,
   ClockIcon, 
   StarIcon 
 } from '@heroicons/react/24/outline'
@@ -14,12 +14,12 @@ const features = [
   {
     icon: ShieldCheckIcon,
     title: 'Safety First',
-    description: 'IATA certified operations with stringent safety protocols'
+    description: 'BCAS cleared operations with stringent safety protocols'
   },
   {
     icon: GlobeAltIcon,
     title: 'Pan-India Coverage',
-    description: 'Services across 25+ major airports in India'
+    description: 'Services across 10+ major airports in India'
   },
   {
     icon: ClockIcon,
@@ -49,8 +49,8 @@ export default function AboutSection() {
               Your Trusted <span className="text-gradient">Aviation Partner</span>
             </h2>
             <p className="text-large mb-8">
-              With over 15 years of experience, Visskan Aviation has established itself as 
-              India's premier ground handling service provider. We combine cutting-edge 
+              With over 25 years of experience, Visskan Aviation has established itself as 
+              India's premier ground & cargo handling service provider. We combine cutting-edge 
               technology with experienced professionals to deliver exceptional aviation 
               support services.
             </p>
@@ -102,7 +102,7 @@ export default function AboutSection() {
           >
             <div className="relative rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                src="https://images.unsplash.com/photo-1543903905-cee4ab46985c?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Aviation Ground Operations"
                 width={600}
                 height={400}
@@ -120,7 +120,7 @@ export default function AboutSection() {
               className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-aviation-blue-600 mb-1">15+</div>
+                <div className="text-3xl font-bold text-aviation-blue-600 mb-1">25+</div>
                 <div className="text-sm text-aviation-grey-600">Years Experience</div>
               </div>
             </motion.div>

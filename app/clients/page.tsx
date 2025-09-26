@@ -11,46 +11,26 @@ export const metadata: Metadata = {
 }
 
 const clients = [
-  { 
-    name: 'Air India', 
-    description: 'National flag carrier of India',
-    logo: 'https://logos-world.net/wp-content/uploads/2023/01/Air-India-Logo.png'
-  },
-  { 
-    name: 'IndiGo', 
-    description: 'Largest airline in India by passengers carried',
-    logo: 'https://logos-world.net/wp-content/uploads/2023/01/IndiGo-Logo.png'
-  },
-  { 
-    name: 'SpiceJet', 
-    description: 'Low-cost airline headquartered in Gurugram',
-    logo: 'https://logos-world.net/wp-content/uploads/2023/01/SpiceJet-Logo.png'
-  },
-  { 
-    name: 'Vistara', 
-    description: 'Full-service carrier joint venture',
-    logo: 'https://logos-world.net/wp-content/uploads/2023/01/Vistara-Logo.png'
-  },
-  { 
-    name: 'GoAir', 
-    description: 'Ultra low-cost airline',
-    logo: 'https://logos-world.net/wp-content/uploads/2023/01/Go-First-Logo.png'
-  },
-  { 
-    name: 'AirAsia India', 
-    description: 'Low-cost airline subsidiary',
-    logo: 'https://logos-world.net/wp-content/uploads/2023/01/AirAsia-Logo.png'
-  },
-  { 
-    name: 'Alliance Air', 
-    description: 'Regional subsidiary of Air India',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Alliance_Air_logo.svg/1200px-Alliance_Air_logo.svg.png'
-  },
-  { 
-    name: 'Blue Dart Aviation', 
-    description: 'Cargo airline',
-    logo: 'https://logos-world.net/wp-content/uploads/2020/11/Blue-Dart-Logo.png'
-  }
+  { name: 'Air India', description: 'National flag carrier of India', logo: 'https://airhex.com/images/airline-logos/air-india.png' },
+  { name: 'IndiGo', description: 'Largest airline in India by passengers carried', logo: 'https://airhex.com/images/airline-logos/indigo.png' },
+  { name: 'Jet Airways', description: 'Full-service airline', logo: 'https://airhex.com/images/airline-logos/jet-airways.png' },
+  { name: 'SpiceJet', description: 'Low-cost airline headquartered in Gurugram', logo: 'https://airhex.com/images/airline-logos/spicejet.png' },
+  { name: 'Go Air', description: 'Ultra low-cost airline', logo: 'https://airhex.com/images/airline-logos/go-first.png' },
+  { name: 'Air Asia', description: 'Low-cost carrier', logo: 'https://airhex.com/images/airline-logos/airasia.png' },
+  { name: 'Thai Airways', description: 'International airline', logo: 'https://airhex.com/images/airline-logos/thai-airways.png' },
+  { name: 'Lufthansa', description: 'German flag carrier', logo: 'https://airhex.com/images/airline-logos/lufthansa.png' },
+  { name: 'Singapore Airlines', description: 'International airline', logo: 'https://airhex.com/images/airline-logos/singapore-airlines.png' },
+  { name: 'Kingfisher', description: 'Former Indian airline', logo: 'https://airhex.com/images/airline-logos/kingfisher-airlines.png' },
+  { name: 'Blue Dart Aviation', description: 'Cargo airline', logo: 'https://airhex.com/images/airline-logos/blue-dart-aviation.png' },
+  { name: 'AIASL (Air India Air Services Limited)', description: 'Ground handling services', logo: 'https://airhex.com/images/airline-logos/air-india.png' },
+  { name: 'AISATS (Air India - SATS)', description: 'Ground handling services', logo: 'https://airhex.com/images/airline-logos/air-india.png' },
+  { name: 'AAI (Airport Authority of India)', description: 'Airport authority', logo: 'https://www.aai.aero/sites/default/files/logo_15042021.png' },
+  { name: 'GMR Airport', description: 'Airport operator', logo: 'https://www.gmrgroup.in/src/images/home/gmr-logo-small.png' },
+  { name: 'Menzies Aviation', description: 'Ground handling and cargo', logo: 'https://menziesaviation.com/wp-content/uploads/2024/01/Logo.svg' },
+  { name: 'Globe Ground India', description: 'Ground handling', logo: 'https://img1.wsimg.com/isteam/ip/f4f6fc7c-c145-4151-8f15-931f7cace4df/logo/f1c457f2-7b1b-4f88-a954-1e5e594bf543.png' },
+  { name: 'TAJ Sats', description: 'Catering and services', logo: 'https://www.tajsats.com/front_assets/images/logo.svg' },
+  { name: 'WFS', description: 'Worldwide Flight Services', logo: 'https://iconlogovector.com/uploads/images/2025/08/lg-68a4fea2a0d89-Worldwide-Flight-Services-WFS.webp' },
+  { name: 'First Flight Courier', description: 'Courier and logistics', logo: 'https://firstflightme.com/assets/user-logo-Dj-SKSC_.png' },
 ]
 
 const testimonials = [
@@ -93,14 +73,18 @@ export default function Clients() {
             {clients.map((client, index) => (
               <div key={client.name} className="card p-6 text-center hover:shadow-lg transition-shadow duration-300">
                 <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mx-auto mb-4 p-2 shadow-sm border border-aviation-grey-200">
-                  <Image
-                    src={client.logo}
-                    alt={`${client.name} logo`}
-                    width={80}
-                    height={80}
-                    className="object-contain"
-                    style={{ maxWidth: '100%', height: 'auto' }}
-                  />
+                  {client.logo ? (
+                    <Image
+                      src={client.logo}
+                      alt={`${client.name} logo`}
+                      width={80}
+                      height={80}
+                      className="object-contain"
+                      style={{ maxWidth: '100%', height: 'auto' }}
+                    />
+                  ) : (
+                    <span className="text-sm text-aviation-grey-600">{client.name}</span>
+                  )}
                 </div>
                 <h3 className="text-lg font-poppins font-semibold text-aviation-grey-900 mb-2">
                   {client.name}

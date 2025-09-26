@@ -41,11 +41,12 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/Visshanaviation logo.svg"
-            alt="Visskan Aviation Logo"
-            width={50}
-            height={50}
-            className="h-10 w-auto"
+            src="/visskan-stacked-logo.svg"
+            alt="Visskan Aviation logo"
+            width={240}
+            height={60}
+            priority
+            className="h-12 md:h-14 w-auto"
           />
         </Link>
 

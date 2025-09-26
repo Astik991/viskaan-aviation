@@ -7,8 +7,8 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline'
 
 const stats = [
   { number: '500+', label: 'Daily Flights Handled' },
-  { number: '25+', label: 'Airport Locations' },
-  { number: '15+', label: 'Years Experience' },
+  { number: '10+', label: 'Airport Locations' },
+  { number: '25+', label: 'Years Experience' },
   { number: '99.9%', label: 'On-Time Performance' },
 ]
 

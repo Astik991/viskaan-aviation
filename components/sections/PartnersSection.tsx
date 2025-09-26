@@ -2,20 +2,48 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const partners = [
-  { name: 'Air India', logo: '/images/partners/air-india.png' },
-  { name: 'IndiGo', logo: '/images/partners/indigo.png' },
-  { name: 'SpiceJet', logo: '/images/partners/spicejet.png' },
-  { name: 'Vistara', logo: '/images/partners/vistara.png' },
-  { name: 'GoAir', logo: '/images/partners/goair.png' },
-  { name: 'AirAsia India', logo: '/images/partners/airasia.png' }
+  {
+    name: 'Air India & their International Client Airlines',
+    logo: 'https://airhex.com/images/airline-logos/air-india.png',
+  },
+  {
+    name: 'IndiGo',
+    logo: 'https://airhex.com/images/airline-logos/indigo.png',
+  },
+  {
+    name: 'SpiceJet',
+    logo: 'https://airhex.com/images/airline-logos/spicejet.png',
+  },
+  {
+    name: 'Jet Airways',
+    logo: 'https://airhex.com/images/airline-logos/jet-airways.png',
+  },
+  {
+    name: 'Go First (GoAir)',
+    logo: 'https://airhex.com/images/airline-logos/go-first.png',
+  },
+  {
+    name: 'Kingfisher',
+    logo: 'https://airhex.com/images/airline-logos/kingfisher-airlines.png',
+  },
 ]
 
 const airports = [
-  'Mumbai (BOM)', 'Delhi (DEL)', 'Bangalore (BLR)', 'Chennai (MAA)',
-  'Kolkata (CCU)', 'Hyderabad (HYD)', 'Pune (PNQ)', 'Ahmedabad (AMD)',
-  'Kochi (COK)', 'Goa (GOI)', 'Jaipur (JAI)', 'Lucknow (LKO)'
+  'Bangalore (BLR)',
+  'Chennai (MAA)',
+  'Hyderabad (HYD)',
+  'Calicut (CCJ)',
+  'Cochin (COK)',
+  'Trichy (TRZ)',
+  'Coimbatore (CJB)',
+  'Mangalore (IXE)',
+  'Trivandrum (TRV)',
+  'Pune (PNQ)',
+  'Hubballi (HBX)',
+  'Madurai (IXM)'
 ]
 
 export default function PartnersSection() {
@@ -39,18 +67,26 @@ export default function PartnersSection() {
           </p>
           
           {/* Partner Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-stretch justify-items-center mb-16">
             {partners.map((partner, index) => (
               <motion.div
                 key={partner.name}
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 w-full h-24 flex items-center justify-center"
+                className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 w-full h-28 flex flex-col items-center justify-center"
               >
-                {/* Placeholder for partner logos */}
-                <div className="text-aviation-grey-600 font-medium text-center">
+                {partner.logo ? (
+                  <Image
+                    src={partner.logo}
+                    alt={`${partner.name} logo`}
+                    width={100}
+                    height={40}
+                    className="object-contain max-h-10"
+                  />
+                ) : null}
+                <div className="text-aviation-grey-700 text-sm font-medium text-center mt-3 px-2">
                   {partner.name}
                 </div>
               </motion.div>

@@ -32,10 +32,9 @@ export default function About() {
                 About <span className="text-gradient">Visskan Aviation</span>
               </h1>
               <p className="text-large mb-12">
-                Since commencing operations in 1999, Visskan Aviation has established itself as the trusted 
-                and reliable provider of world-class ground handling and cargo handling services to leading 
-                airlines at several major airports across India including Bangalore, Hyderabad, Chennai, 
-                Coimbatore, Calicut, Cochin, Mangalore, Delhi, Trichy and Pune.
+                Since commencing operations in 1999, Visskan Aviation has established itself as the trusted and
+                reliable provider of world-class ground handling and cargo handling services to leading airlines
+                and airports across India.
               </p>
             </div>
           </div>
@@ -83,24 +82,20 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-poppins font-semibold mb-4">IATA Certified</h3>
-                <p className="text-aviation-grey-600">
-                  Fully certified operations meeting international aviation standards
-                </p>
+                <h3 className="text-xl font-poppins font-semibold mb-4">BCAS Cleared</h3>
+                <p className="text-aviation-grey-600">Ensuring trusted and compliant aviation services</p>
               </div>
-              
+
               <div className="card p-8">
                 <div className="w-16 h-16 bg-aviation-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg className="w-8 h-8 text-aviation-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-poppins font-semibold mb-4">25+ Airports</h3>
-                <p className="text-aviation-grey-600">
-                  Strategic presence across major Indian airports nationwide
-                </p>
+                <h3 className="text-xl font-poppins font-semibold mb-4">10+ Airports</h3>
+                <p className="text-aviation-grey-600">Strategic presence across major Indian airports nationwide</p>
               </div>
-              
+
               <div className="card p-8">
                 <div className="w-16 h-16 bg-aviation-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg className="w-8 h-8 text-aviation-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -108,9 +103,7 @@ export default function About() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-poppins font-semibold mb-4">24/7 Service</h3>
-                <p className="text-aviation-grey-600">
-                  Round-the-clock operations ensuring continuous support
-                </p>
+                <p className="text-aviation-grey-600">Round-the-clock operations ensuring continuous support</p>
               </div>
             </div>
           </div>

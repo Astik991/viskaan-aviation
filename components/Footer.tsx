@@ -24,35 +24,33 @@ const navigation = {
     { name: 'Fuel Services', href: '/services#fuel-services' },
   ],
   legal: [
-    { name: 'Privacy Policy', href: '/privacy' },
     { name: 'Terms of Service', href: '/terms' },
     { name: 'Cookie Policy', href: '/cookies' },
   ],
 }
 
-const contactInfo = [
-  {
-    icon: MapPinIcon,
-    title: 'Headquarters',
-    details: ['Mumbai Airport', 'Terminal 2, Level 3', 'Mumbai, Maharashtra 400099']
-  },
-  {
-    icon: PhoneIcon,
-    title: 'Phone',
-    details: ['+91 22 6685 1000', '+91 22 6685 1001']
-  },
-  {
-    icon: EnvelopeIcon,
-    title: 'Email',
-    details: ['info@visskanaviation.com', 'support@visskanaviation.com']
-  },
-  {
-    icon: GlobeAltIcon,
-    title: 'Website',
-    details: ['www.visskanaviation.com']
-  }
-]
-
+  const contactInfo = [
+    {
+      icon: MapPinIcon,
+      title: 'Headquarters',
+      details: ['Bangalore', 'Karnataka']
+    },
+    {
+      icon: PhoneIcon,
+      title: 'Phone',
+      details: ['+91 94821 45072']
+    },
+    {
+      icon: EnvelopeIcon,
+      title: 'Email',
+      details: ['info@visskanaviation.com', 'support@visskanaviation.com']
+    },
+    {
+      icon: GlobeAltIcon,
+      title: 'Website',
+      details: ['www.visskanaviation.com']
+    }
+  ]
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -64,15 +62,12 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center space-x-3 mb-6">
               <Image
-                src="/Visshanaviation logo.svg"
+                src="/visskan-stacked-logo.svg"
                 alt="Visskan Aviation Logo"
                 width={40}
                 height={40}
                 className="h-10 w-auto brightness-0 invert"
               />
-              <span className="text-xl font-poppins font-bold">
-                Visskan Aviation
-              </span>
             </Link>
             <p className="text-aviation-grey-300 mb-6 leading-relaxed">
               Leading provider of comprehensive ground handling and aviation support 
